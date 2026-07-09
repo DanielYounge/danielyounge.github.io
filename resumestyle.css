@@ -1,4 +1,4 @@
-/* Global Styles (Mobile First)  */
+/* Global Styles (Mobile First) */
 
 * {
     margin: 0;
@@ -11,6 +11,21 @@ body {
     line-height: 1.6;
     background-color: #f4f6f8;
     color: #333;
+}
+
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: #e2e8f0;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
 
 /* Header */
@@ -71,12 +86,17 @@ body {
     gap: 1.5rem;
 }
 
+.project-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 /* Card Styling */
 .card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
@@ -85,11 +105,66 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.card h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card article + article {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.card section + section {
+    margin-top: 1.5rem;
+}
+
+.card ul {
+    margin-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.card li + li {
+    margin-top: 0.35rem;
+}
+
+.education-entry + .education-entry {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.meta {
+    color: #64748b;
+    margin-bottom: 0.75rem;
+}
+
+.tech-stack {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-entry ul {
+    margin-left: 1.25rem;
+}
+
+.project-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
 /* Skills Grid (Mobile = stacked) */
 .skills-grid {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.skills-grid h3 {
+    margin-top: 0;
 }
 
 /* Footer */
@@ -101,7 +176,7 @@ footer {
     margin-top: 2rem;
 }
 
-/*  Desktop / Laptop (1920px Layout)  */
+/* Desktop / Laptop Layout */
 
 @media (min-width: 1024px) {
 
@@ -121,7 +196,7 @@ footer {
         max-width: 1200px;
         margin: auto;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 

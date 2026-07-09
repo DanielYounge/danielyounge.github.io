@@ -3,202 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkerboard Game Simulator - Daniel Younge</title>
+    <title>UCF Fashion Society - Daniel Younge</title>
+    <link rel="stylesheet" href="resumestyle.css">
 </head>
 <body>
-    <header>
-        <h1>Daniel Younge</h1>
-        <nav>
+
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-section">
+                <h1>Daniel Younge</h1>
+                <p class="tagline">UCF Fashion Society Website</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Resume</a></li>
-                <li><a href="project1.html">Minecraft AWS Server</a></li>
-                <li><a href="project2.html">Checkerboard Simulator</a></li>
+                <li><a href="project1.html">PackThreads</a></li>
+                <li><a href="project2.html">Fashion Society</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <article>
+    <main class="container project-page">
+        <article class="card full-width">
             <header>
-                <h2>Checkerboard Game Simulator with AI</h2>
-                <p>Object-Oriented Programming & AI Project | Fall 2023</p>
+                <h2>UCF Fashion Society &mdash; Club Website</h2>
+                <p class="meta">Club Web Development &mdash; React, TypeScript, Tailwind CSS, Vite</p>
+                <p>
+                    Repository:
+                    <a href="https://github.com/UCF-Fashion-Society/Fashion-Society-Web-25-26" target="_blank">
+                        UCF-Fashion-Society/Fashion-Society-Web-25-26
+                    </a>
+                </p>
             </header>
+
             <section>
                 <h3>Project Overview</h3>
-                <p>Developed a complete Checkers game simulator with graphical interface, rule enforcement, and multiple AI opponent difficulty levels using Java and JavaFX. The project focused on implementing game logic, artificial intelligence algorithms, and object-oriented design principles.</p>
-                
-                <p>The simulator supports multiple game modes including Player vs Player, Player vs AI, and AI vs AI simulation with statistical analysis. It features a fully animated interface, move validation, and comprehensive game state management.</p>
+                <p>
+                    Contributed to the official website for the University of Central Florida Fashion Society,
+                    a student organization focused on creativity and self-expression through design, styling,
+                    modeling, and production. The site serves as the club&rsquo;s public-facing hub for
+                    information about committees, events, and shows.
+                </p>
+            </section>
+
+            <section>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Multi-page site with React Router: Home, About, Shows, Events, Committees, and Contact</li>
+                    <li>Responsive hero section with custom typography using fluid <code>clamp()</code> sizing</li>
+                    <li>Fixed navigation bar with route-aware text color (white on home, dark on inner pages)</li>
+                    <li>About page outlining the club&rsquo;s nine committees and mission</li>
+                    <li>Modern styling with Tailwind CSS utility classes</li>
+                </ul>
             </section>
 
             <section>
                 <h3>Technical Implementation</h3>
-                
-                <h4>Core Architecture:</h4>
                 <ul>
-                    <li><strong>Programming Language</strong>: Java 17 with JavaFX for GUI</li>
-                    <li><strong>Design Patterns</strong>: Model-View-Controller (MVC), Singleton, Strategy</li>
-                    <li><strong>Game Engine</strong>: Custom-built checkers rule engine</li>
-                    <li><strong>AI System</strong>: Minimax algorithm with alpha-beta pruning</li>
-                    <li><strong>Data Persistence</strong>: JSON file storage for game states and statistics</li>
-                </ul>
-                
-                <h4>Key Components:</h4>
-                <ul>
-                    <li><strong>Board Class</strong>: 8x8 grid representation with piece management</li>
-                    <li><strong>Piece Class Hierarchy</strong>: Abstract Piece class with Man and King subclasses</li>
-                    <li><strong>Game Controller</strong>: Central game logic and state management</li>
-                    <li><strong>Move Validator</strong>: Comprehensive rule checking including mandatory jumps</li>
-                    <li><strong>AI Engine</strong>: Three difficulty levels with adjustable search depth</li>
-                    <li><strong>UI Renderer</strong>: Interactive graphical interface with animations</li>
-                    <li><strong>Statistics Module</strong>: Game analytics and performance tracking</li>
+                    <li><strong>Framework:</strong> React 19 with TypeScript</li>
+                    <li><strong>Build tool:</strong> Vite for fast development and production builds</li>
+                    <li><strong>Routing:</strong> React Router DOM for client-side navigation</li>
+                    <li><strong>Styling:</strong> Tailwind CSS v4 with responsive, mobile-first layouts</li>
+                    <li><strong>Collaboration:</strong> GitHub organization repository with team-based development</li>
                 </ul>
             </section>
 
             <section>
-                <h3>Game Features</h3>
+                <h3>Site Structure</h3>
                 <ul>
-                    <li><strong>Complete Rule Implementation</strong>: Standard American Checkers rules with forced captures</li>
-                    <li><strong>Multiple Game Modes</strong>:
-                        <ul>
-                            <li>Human vs Human (local multiplayer)</li>
-                            <li>Human vs AI (three difficulty levels)</li>
-                            <li>AI vs AI (simulation mode)</li>
-                            <li>Tournament mode with round-robin scheduling</li>
-                        </ul>
-                    </li>
-                    <li><strong>AI Difficulty Levels</strong>:
-                        <ul>
-                            <li><strong>Easy</strong>: Random move selection with basic strategy</li>
-                            <li><strong>Medium</strong>: Minimax algorithm with 3-ply search depth</li>
-                            <li><strong>Hard</strong>: Minimax with alpha-beta pruning and 6-ply depth</li>
-                        </ul>
-                    </li>
-                    <li><strong>Visual Features</strong>:
-                        <ul>
-                            <li>Animated piece movements and captures</li>
-                            <li>Highlighted legal moves</li>
-                            <li>Visual king promotion effects</li>
-                            <li>Move history display</li>
-                            <li>Score tracking and game timer</li>
-                        </ul>
-                    </li>
-                    <li><strong>Game Management</strong>:
-                        <ul>
-                            <li>Save/Load game functionality</li>
-                            <li>Undo/Redo moves (up to 50 moves)</li>
-                            <li>Game replay system</li>
-                            <li>Export game to PGN (Portable Game Notation)</li>
-                        </ul>
-                    </li>
+                    <li><strong>src/pages/</strong> &mdash; Home, About, Shows, Events, Committees, Contact</li>
+                    <li><strong>src/components/</strong> &mdash; Shared navigation component with active route styling</li>
+                    <li><strong>src/App.tsx</strong> &mdash; Router configuration and layout shell</li>
                 </ul>
             </section>
 
             <section>
-                <h3>AI Algorithm Implementation</h3>
-                
-                <h4>Minimax with Alpha-Beta Pruning:</h4>
-                <pre><code>function alphabeta(node, depth, α, β, maximizingPlayer) is
-    if depth = 0 or node is terminal then
-        return evaluate(node)
-    if maximizingPlayer then
-        value := -∞
-        for each child of node do
-            value := max(value, alphabeta(child, depth-1, α, β, FALSE))
-            α := max(α, value)
-            if α ≥ β then
-                break // β cutoff
-        return value
-    else
-        value := +∞
-        for each child of node do
-            value := min(value, alphabeta(child, depth-1, α, β, TRUE))
-            β := min(β, value)
-            if β ≤ α then
-                break // α cutoff
-        return value</code></pre>
-                
-                <h4>Board Evaluation Function:</h4>
-                <p>The AI uses a weighted evaluation function considering:</p>
+                <h3>Skills Demonstrated</h3>
                 <ul>
-                    <li>Material advantage (piece count)</li>
-                    <li>King value multiplier (kings worth 1.5× regular pieces)</li>
-                    <li>Positional advantage (center control, back row safety)</li>
-                    <li>Mobility (number of legal moves available)</li>
-                    <li>Forced capture opportunities</li>
-                </ul>
-                
-                <h4>Performance Optimization:</h4>
-                <ul>
-                    <li>Move ordering heuristics for better alpha-beta pruning</li>
-                    <li>Transposition table for caching board evaluations</li>
-                    <li>Iterative deepening for time-limited moves</li>
-                    <li>Parallel search for higher difficulty levels</li>
+                    <li>React and TypeScript frontend development</li>
+                    <li>Responsive UI design with Tailwind CSS</li>
+                    <li>Client-side routing and component architecture</li>
+                    <li>Collaborative development on an organization-owned GitHub repository</li>
                 </ul>
             </section>
 
-            <section>
-                <h3>Development Challenges & Solutions</h3>
-                <dl>
-                    <dt>Complex Move Validation</dt>
-                    <dd>Implemented a recursive algorithm to handle multiple jumps and forced capture sequences, ensuring all possible capture chains are evaluated.</dd>
-                    
-                    <dt>AI Performance Optimization</dt>
-                    <dd>Used memoization and move ordering to reduce search space, achieving 6-ply search depth in under 2 seconds on average hardware.</dd>
-                    
-                    <dt>State Management</dt>
-                    <dd>Designed immutable game state objects to enable easy undo/redo functionality and game replay system.</dd>
-                    
-                    <dt>GUI Responsiveness</dt>
-                    <dd>Implemented multi-threading to keep UI responsive during AI calculation, with progress indicators for long computations.</dd>
-                </dl>
-            </section>
-
-            <section>
-                <h3>Skills Developed</h3>
-                <ul>
-                    <li><strong>Object-Oriented Design</strong>: Class hierarchies, inheritance, polymorphism</li>
-                    <li><strong>Algorithm Implementation</strong>: Minimax, alpha-beta pruning, graph traversal</li>
-                    <li><strong>GUI Development</strong>: JavaFX components, event handling, animations</li>
-                    <li><strong>Game Development</strong>: Game loop, state management, rule enforcement</li>
-                    <li><strong>Data Structures</strong>: Efficient board representation using bitboards</li>
-                    <li><strong>Software Testing</strong>: Unit tests for game logic, integration tests for AI</li>
-                    <li><strong>Performance Optimization</strong>: Algorithm efficiency, memory management</li>
-                    <li><strong>Version Control</strong>: Git for collaborative development</li>
-                    <li><strong>Documentation</strong>: UML diagrams, technical specifications</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Project Statistics</h3>
-                <dl>
-                    <dt>Lines of Code</dt>
-                    <dd>4,200+ (Java)</dd>
-                    
-                    <dt>Development Time</dt>
-                    <dd>10 weeks (part-time)</dd>
-                    
-                    <dt>Classes/Interfaces</dt>
-                    <dd>28 total (15 core game classes, 8 UI classes, 5 utility classes)</dd>
-                    
-                    <dt>Test Coverage</dt>
-                    <dd>85% (JUnit tests for game logic)</dd>
-                    
-                    <dt>AI Performance</dt>
-                    <dd>Evaluates 15,000-50,000 positions per second depending on depth</dd>
-                    
-                    <dt>Memory Usage</dt>
-                    <dd>&lt; 100MB during gameplay</dd>
-                </dl>
-            </section>
-
-            <footer>
-                <p><a href="index.html">← Return to Resume</a></p>
+            <footer class="project-footer">
+                <p><a href="index.html">&larr; Return to Resume</a></p>
             </footer>
         </article>
     </main>
 
     <footer>
-        <p>Object-Oriented Programming & AI Project | Computer Science Course Project</p>
+        <p>&copy; 2026 Daniel Younge | Hosted on GitHub Pages</p>
     </footer>
+
 </body>
 </html>

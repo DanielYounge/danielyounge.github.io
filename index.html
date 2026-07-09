@@ -17,7 +17,8 @@
 
             <address class="contact-info">
                 <p>Email: <a href="mailto:da772108@ucf.edu">da772108@ucf.edu</a></p>
-                <p>LinkedIn: 
+                <p>GitHub: <a href="https://github.com/DanielYounge" target="_blank">github.com/DanielYounge</a></p>
+                <p>LinkedIn:
                     <a href="https://www.linkedin.com/in/daniel-younge-6b2426268/" target="_blank">
                         linkedin.com/in/daniel-younge
                     </a>
@@ -28,8 +29,8 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Resume</a></li>
-                <li><a href="project1.html">AWS Minecraft Server</a></li>
-                <li><a href="project2.html">Checkerboard Simulator</a></li>
+                <li><a href="project1.html">PackThreads</a></li>
+                <li><a href="project2.html">Fashion Society</a></li>
             </ul>
         </nav>
     </header>
@@ -39,78 +40,135 @@
         <section id="objective" class="card full-width">
             <h2>Professional Objective</h2>
             <p>
-                Information Technology student seeking an internship opportunity 
-                to apply software development skills and contribute to innovative 
-                projects. Passionate about creating efficient, user-friendly 
-                applications and expanding knowledge in full-stack development.
+                Information Technology student graduating in 2026, seeking internship and entry-level
+                opportunities in software development and IT. Experienced in full-stack web development,
+                cloud deployment, and technical presentation with a focus on building practical,
+                user-facing applications.
             </p>
         </section>
 
         <section id="education" class="card">
             <h2>Education</h2>
-            <h3>University of Central Florida</h3>
-            <p><strong>Bachelor of Science in Information Technology</strong></p>
-            <p>Expected Graduation: May 2026</p>
-            <p>GPA: 3.6/4.0</p>
-            <p>
-                Relevant Coursework: Computer Science 1 & 2, 
-                Frontiers in IT, Enterprise Computing
-            </p>
-        </section>
 
-        <section id="projects" class="card">
-            <h2>Projects</h2>
-
-            <article>
-                <h3><a href="project1.html">Student Database Management System</a></h3>
-                <p>
-                    Designed and implemented a relational database system 
-                    using MySQL and Python to track student records, courses, and grades.
-                </p>
+            <article class="education-entry">
+                <h3>University of Central Florida</h3>
+                <p><strong>Bachelor of Science in Information Technology</strong></p>
+                <p>Expected Graduation: May 2026</p>
             </article>
 
-            <article>
-                <h3><a href="project2.html">Task Management Web Application</a></h3>
-                <p>
-                    Developed a full-stack web application with authentication 
-                    and real-time updates using modern web technologies.
-                </p>
+            <article class="education-entry">
+                <h3>Valencia College</h3>
+                <p><strong>Associate of Arts in General Education</strong></p>
+                <p>Graduated: 2023</p>
             </article>
         </section>
 
-        <section id="skills" class="card">
-            <h2>Skills</h2>
+        <section id="awards" class="card">
+            <h2>Awards &amp; Recognition</h2>
+            <ul>
+                <li>Principal&rsquo;s List, Valencia College (2020&ndash;2022)</li>
+                <li>Dean&rsquo;s List, University of Central Florida (2024&ndash;2026)</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="card full-width">
+            <h2>Work Experience</h2>
+
+            <article class="experience-entry">
+                <header>
+                    <h3>University of Central Florida</h3>
+                    <p class="meta">Orlando, FL &mdash; <em>Frontier in Information Technology &ndash; Senior Presentations</em></p>
+                </header>
+                <ul>
+                    <li>Led a team researching and presenting emerging technologies (agentic AI, green data centers) to business audiences</li>
+                    <li>Designed and facilitated an interactive Red/Blue/Purple team cybersecurity simulation for live sessions</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects" class="card full-width">
+            <h2>Software Projects</h2>
+
+            <article>
+                <h3><a href="project1.html">PackThreads &mdash; Virtual T-Shirt Collecting Platform</a></h3>
+                <p class="tech-stack">JavaScript, React, Node.js, Express, MongoDB</p>
+                <ul>
+                    <li>Built a MERN app with JWT auth, weighted pack-opening, rarity-based collections, peer-to-peer trading, and leaderboards</li>
+                    <li>Implemented REST APIs with MongoDB aggregation and role-based admin routes; presented a live end-to-end demo of architecture and core features</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3><a href="project2.html">UCF Fashion Society &mdash; Club Website</a></h3>
+                <p class="tech-stack">React, TypeScript, Tailwind CSS, Vite</p>
+                <ul>
+                    <li>Contributed to the official UCF Fashion Society repository with a multi-page React Router site (Home, About, Shows, Events, Committees, Contact)</li>
+                    <li>Built responsive UI with Tailwind CSS, including a custom hero layout and route-aware navigation styling</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="academic" class="card full-width">
+            <h2>Academic Projects</h2>
+
+            <article>
+                <h3>Vigen&egrave;re Cipher Encryptor</h3>
+                <p class="tech-stack">CIS 3360: Security in Computing &mdash; C, Java</p>
+                <ul>
+                    <li>Implemented a Vigen&egrave;re cipher that reads keyword and plaintext files, normalizes input, pads plaintext to 512 characters, and outputs formatted ciphertext</li>
+                    <li>Applied classical cryptography concepts including key expansion and modular arithmetic</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Resume Rater</h3>
+                <p class="tech-stack">COP 2220C &mdash; C</p>
+                <ul>
+                    <li>Built a C program that parses resume and keyword files, tokenizes text, and counts keyword matches to score resume relevance</li>
+                    <li>Used file I/O, dynamic memory allocation, and string comparison for automated text analysis</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="skills" class="card full-width">
+            <h2>Technical Skills</h2>
 
             <div class="skills-grid">
                 <div>
-                    <h3>Programming</h3>
+                    <h3>Programming Languages</h3>
                     <ul>
-                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
                         <li>Java</li>
                         <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
                         <li>SQL</li>
-                        <li>HTML/CSS</li>
+                        <li>R</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3>Technologies</h3>
+                    <h3>Web Development</h3>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>MySQL</li>
+                        <li>HTML &amp; CSS</li>
                         <li>React</li>
-                        <li>Node.js</li>
-                        <li>VS Code</li>
+                        <li>Node.js &amp; Express</li>
+                        <li>MERN Stack</li>
+                        <li>Tailwind CSS</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3>Technical</h3>
+                    <h3>Software &amp; Tools</h3>
                     <ul>
-                        <li>Database Design</li>
-                        <li>RESTful APIs</li>
-                        <li>Agile Methodology</li>
-                        <li>Debugging & Testing</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>VS Code</li>
+                        <li>Linux</li>
+                        <li>AWS</li>
+                        <li>Microsoft Office</li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +177,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Daniel Younge | Hosted on GitHub Pages</p>
+        <p>&copy; 2026 Daniel Younge | Hosted on GitHub Pages</p>
     </footer>
 
 </body>
